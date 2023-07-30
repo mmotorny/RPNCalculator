@@ -22,6 +22,9 @@
 		B4662C702A6A58A5007B213E /* WatchRPNCalculator_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4662C6F2A6A58A5007B213E /* WatchRPNCalculator_Watch_AppUITests.swift */; };
 		B4662C722A6A58A5007B213E /* WatchRPNCalculator_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4662C712A6A58A5007B213E /* WatchRPNCalculator_Watch_AppUITestsLaunchTests.swift */; };
 		B4662C752A6A58A5007B213E /* WatchRPNCalculator Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B4662C522A6A58A4007B213E /* WatchRPNCalculator Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B49C82A62A70F1F700537C85 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C82A52A70F1F700537C85 /* CalculatorButton.swift */; };
+		B49C82AB2A71032000537C85 /* Inconsolata_Condensed-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B49C82AA2A71032000537C85 /* Inconsolata_Condensed-ExtraBold.ttf */; };
+		B49C82B12A73CB2100537C85 /* Inconsolata_Condensed-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B49C82B02A73CB2100537C85 /* Inconsolata_Condensed-ExtraLight.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,10 @@
 		B4662C6B2A6A58A5007B213E /* WatchRPNCalculator Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatchRPNCalculator Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4662C6F2A6A58A5007B213E /* WatchRPNCalculator_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRPNCalculator_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		B4662C712A6A58A5007B213E /* WatchRPNCalculator_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRPNCalculator_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B49C82A52A70F1F700537C85 /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
+		B49C82A92A7100D900537C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B49C82AA2A71032000537C85 /* Inconsolata_Condensed-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inconsolata_Condensed-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B49C82B02A73CB2100537C85 /* Inconsolata_Condensed-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inconsolata_Condensed-ExtraLight.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,10 +182,14 @@
 		B4662C222A6A5850007B213E /* RPNCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				B4662C232A6A5850007B213E /* RPNCalculatorApp.swift */,
-				B4662C252A6A5850007B213E /* ContentView.swift */,
-				B4662C272A6A5851007B213E /* Assets.xcassets */,
+				B49C82AA2A71032000537C85 /* Inconsolata_Condensed-ExtraBold.ttf */,
+				B49C82B02A73CB2100537C85 /* Inconsolata_Condensed-ExtraLight.ttf */,
+				B49C82A92A7100D900537C85 /* Info.plist */,
 				B4662C292A6A5851007B213E /* RPNCalculator.entitlements */,
+				B49C82A52A70F1F700537C85 /* CalculatorButton.swift */,
+				B4662C252A6A5850007B213E /* ContentView.swift */,
+				B4662C232A6A5850007B213E /* RPNCalculatorApp.swift */,
+				B4662C272A6A5851007B213E /* Assets.xcassets */,
 				B4662C2A2A6A5851007B213E /* Preview Content */,
 			);
 			path = RPNCalculator;
@@ -420,6 +431,8 @@
 			files = (
 				B4662C2C2A6A5851007B213E /* Preview Assets.xcassets in Resources */,
 				B4662C282A6A5851007B213E /* Assets.xcassets in Resources */,
+				B49C82B12A73CB2100537C85 /* Inconsolata_Condensed-ExtraLight.ttf in Resources */,
+				B49C82AB2A71032000537C85 /* Inconsolata_Condensed-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4662C262A6A5850007B213E /* ContentView.swift in Sources */,
+				B49C82A62A70F1F700537C85 /* CalculatorButton.swift in Sources */,
 				B4662C242A6A5850007B213E /* RPNCalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,6 +683,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RPNCalculator/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -709,6 +724,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RPNCalculator/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
